@@ -79,7 +79,7 @@ function loginsss(){
 			// DATA UPDATED
 			if ($conn->query($updateUserLog) === TRUE) {
 				// RETURNS DATA
-				header('location:/StreamCipherSQL/babe/index.php');
+				header('location:/StreamCipherSQL/index.php');
 			}else {
 				echo "<div class='alert alert-danger shitFuck' style='width:60%; position:absolute; z-index:9; right:0; bottom:0; box-shadow:4px 4px 4px 4px #000; margin-right:2%; margin-bottom:9%;'>
 			  <strong>WHOOPS!</strong> The information you provided are not recorded in our database!</div>";
@@ -107,10 +107,10 @@ function logouts(){
 			// DATA UPDATED
 				if ($conn->query($updateUserLog) === TRUE) {
 					// RETURNS DATA
-					header('location:/StreamCipherSQL/babe/index.php');
+					header('location:/StreamCipherSQL/index.php');
 				}else {
 					echo "<script type='text/javascript'>alert('SHIT! SOMETHING WENT WRONG!');</script>";
-					header('location:/StreamCipherSQL/babe/index.php');
+					header('location:/StreamCipherSQL/index.php');
 				}
 			
 			$conn->close();
